@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #b300ff;
+    border-radius: 5px;
+}
+
+/* Hero Banner */
+#hero {
+    height: 400px;
+    background-image: url('IMG/Xmh.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+#sidebar {
+    left: 0;
+    /* padding-left: 10px; */
+    width: 250px; /* Set a fixed width for the sidebar */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 10px; */
+    height: 1200px; /* Make the sidebar fill the height of the viewport */
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 0px;
+    padding-right: 10px;
+    margin-right: 40px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding-top:100px;
+    margin: 0;
+}
+
+#sidebar ul li {
+
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sidebar ul li:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Adjust Main Content to fit Sidebar */
+main {
+    display: flex;
+    margin-left: 70px; 
+    /* Give space to the sidebar */
+    padding: 20px;
+    padding-right: 200px;
+    /* margin-bottom: -200px; */
+}
+
+/* Car Section Layout */
+.car-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.car-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.new-tag {
+    background-color: #007bff;
+}
+
+.electric-tag {
+    background-color: #28a745;
+}
+
+.petrol-tag {
+    background-color: #ffc107;
+}
+
+.diesel-tag {
+    background-color: #6c757d;
+}
+
+.amg-tag {
+    background-color: #dc3545;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* #BMWX{
+    margin-bottom: 700px;
+} */
+.SETX678{
+    /* margin-right: 200px; */
+    margin-bottom: 400px;
+}
