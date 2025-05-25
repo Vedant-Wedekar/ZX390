@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forza Cars: BMW</title>
+    <link rel="stylesheet" href="bmw.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative; /* Ensure header stays above hero banner */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hero Banner Section */
+        #hero {
+            background-image: url('IMG/Xmh.jpg'); /* Add the URL of your hero banner image here */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0; /* Remove any margins to align after header */
+            padding: 50px 20px;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content a {
+            background-color: #b300ff;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .hero-content a:hover {
+            background-color: #b300ff8f;
+        }
+
+        /* Car Card Section */
+        .car-column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .car-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%; /* Ensuring all cards have consistent width */
+            margin: 15px;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .car-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .car-card h3 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .car-card p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .tags {
+            margin-top: 10px;
+        }
+
+        new-tag {
+    background-color: #007bff;
+}
+
+.electric-tag {
+    background-color: #28a745;
+}
+
+.petrol-tag {
+    background-color: #ffc107;
+}
+
+.diesel-tag {
+    background-color: #6c757d;
+}
+
+.luxury-tag{
+    background-color: #b300ff;
+}
+
+.amg-tag {
+    background-color: #dc3545;
+}
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#BMWX">BMW X</a></li>
+                <li><a href="#3Series">BMW 3 Series</a></li>
+                <li><a href="#5Series">BMW 5 Series</a></li>
+                <li><a href="#7Series">BMW 7 Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>The All New BMW XM: Price Starts at Rs 2.60 CR</h1>
+            <a href="#models">Explore BMW Models</a>
+        </div>
+    </section>
+    
+    
+
+
+    <main>
+        <div id="sidebar">
+        <div id="sidebar">
+            <ul>
+                <li>Electric</li>
+                <li>Hybrids</li>
+                <li>Mild Hybrids</li>
+                <li>Compare models</li>
+            </ul>
+        </div>
+    </div>
+        <!-- BMW X Series -->
+         <div class="SETX670">
+        <section id="BMWX">
+            <h2>BMW X Models</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/xm.jpg" alt="BMW XM">
+                    <h3>BMW XM</h3>
+                    <p>Price Starts at: ₹2,60,00,000.00</p>
+                    <span class="tag new-tag">New</span>
+                        <span class="tag petrol-tag">Petrol</span>
+                        <span class="tag electric-tag">Hybrid</span>
+                </div>
+
+                <div class="car-card">
+                    <a href="X7.html">
+                    <img src="IMG/x7.jpg" alt="BMW X7"></a>
+                    <h3>BMW X7</h3>
+                    <p>Price Starts at: ₹1,73,00,000.00</p>
+                    <div class="tags">
+                        <span class="tag diesel-tag">Diesel</span>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/x1.jpg" alt="BMW X1">
+                    <h3>BMW X1</h3>
+                    <p>Price Starts at: ₹1,62,25,000.00</p>
+                    <div class="tags">
+                        <span class="tag petrol-tag">Petrol</span>
+                        <span class="tag electric-tag">Electric</span>
+                        <span class="tag diesel-tag">Diesel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BMW 3 Series -->
+        <section id="3Series">
+            <h2>BMW 3 Series</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/3.jpg" alt="BMW 3 Series Gran Limousine">
+                    <h3>BMW 3 Series Gran Limousine</h3>
+                    <p>Price Starts at: ₹66,00,000.00</p>
+                    <div class="tags">
+                        <span class="tag petrol-tag">Petrol</span>
+                        <span class="tag diesel-tag">Diesel</span>
+                        <span class="tag luxury-tag">Luxury</span>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/m3.jpg" alt="BMW M340i">
+                    <h3>BMW M340i</h3>
+                    <p>Price Starts at: ₹77,90,000.00</p>
+                    <div class="tags">
+                        <span class="tag petrol-tag">Petrol</span>
+                        <span class="tag amg-tag">M-Sport</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BMW 5 Series -->
+        <section id="5Series">
+            <h2>BMW 5 Series</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/5.jpg" alt="BMW 5 Series Long Wheelbase">
+                    <h3>BMW 5 Series Long Wheelbase</h3>
+                    <p>Price Starts at: ₹1,85,25,000.00</p>
+                    <div class="tags">
+                        <span class="tag petrol-tag">Petrol</span>
+                        <span class="tag luxury-tag">Luxury</span>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/i5a.jpg" alt="BMW i5 m60 xDrive">
+                    <h3>BMW i5 m60 xDrive</h3>
+                    <p>Price Starts at: ₹1,85,25,000.00</p>
+                    <div class="tags">
+                        <span class="tag electric-tag">Electric</span>
+                        <span class="tag amg-tag">M-Sport</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BMW 7 Series -->
+        <section id="7Series">
+            <h2>BMW 7 Series</h2>
+            <div class="car-column">
+                <div class="car-card">
+                    <img src="IMG/7series.jpg" alt="BMW 7 Series Sedan">
+                    <h3>BMW 7 Series Sedan</h3>
+                    <p>Price Starts at: ₹3,30,00,000.00</p>
+                    <div class="tags">
+                        <span class="tag petrol-tag">Petrol</span>
+                        <span class="tag luxury-tag">Luxury</span>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="IMG/i7.jpg" alt="BMW i7 M70 xDrive">
+                    <h3>BMW i7 M70 xDrive</h3>
+                    <p>Price Starts at: ₹3,30,00,000.00
+                        <div class="tags">
+                            <span class="tag electric-tag">Electric</span>
+                            <span class="tag amg-tag">M-Sport</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </main>
+    </body>
+    </html>
