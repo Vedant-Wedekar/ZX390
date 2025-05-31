@@ -1,0 +1,136 @@
+<html>
+ <head>
+  <title>
+   Unlockt.me
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+  <style>
+   .image-container {
+    transition: transform 0.1s ease-out;
+   }
+   .image-container img {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+   }
+   .image-container:hover img {
+    filter: blur(0);
+   }
+  </style>
+ <!-- </head>
+ <body class="bg-white text-black font-sans">
+  <header class="flex justify-between items-center p-4">
+   <div class="flex items-center space-x-2">
+    <i class="fas fa-lock text-2xl">
+    </i>
+    <span class="text-xl font-bold">
+     unlockt.me
+    </span>
+   </div>
+   <nav class="flex items-center space-x-4">
+    <a class="text-black" href="#">
+     Our Blog
+    </a>
+    <a class="text-black" href="#">
+     FAQ
+    </a>
+    <a class="bg-black text-white px-4 py-2 rounded-full" href="#">
+     Sign Up
+    </a>
+   </nav>
+  </header> -->
+  <lower-main class="flex flex-col items-center text-center mt-16 relative">
+
+   <div class="absolute inset-0 flex justify-center items-center">
+    <div class="relative w-full h-full">
+
+     <div class="absolute top-0 left-1/4 w-32 h-32 bg-gray-200 rounded-lg overflow-hidden image-container">
+      <img alt="Blurred image of a person" class="w-full h-full object-cover" height="128" src="https://placehold.co/128x128" width="128"/>
+      <i class="fas fa-times absolute top-2 right-2 text-white">
+      </i>
+     </div>
+
+     <div class="absolute top-0 right-1/4 w-32 h-32 bg-gray-200 rounded-lg overflow-hidden image-container">
+      <img alt="Blurred image of a person" class="w-full h-full object-cover" height="128" src="https://placehold.co/128x128" width="128"/>
+      <i class="fas fa-lock absolute top-2 right-2 text-white">
+      </i>
+     </div>
+
+     <div class="absolute top-1/2 left-0 w-32 h-32 bg-gray-200 rounded-lg overflow-hidden transform -translate-y-1/2 image-container">
+      <img alt="Blurred image of a person" class="w-full h-full object-cover" height="128" src="https://placehold.co/128x128" width="128"/>
+      <i class="fas fa-times absolute top-2 right-2 text-white">
+      </i>
+     </div>
+
+     <div class="absolute top-1/2 right-0 w-32 h-32 bg-gray-200 rounded-lg overflow-hidden transform -translate-y-1/2 image-container">
+      <img alt="Blurred image of a person" class="w-full h-full object-cover" height="128" src="https://placehold.co/128x128" width="128"/>
+      <i class="fas fa-lock absolute top-2 right-2 text-white">
+      </i>
+     </div>
+
+     <div class="absolute bottom-0 left-1/4 w-32 h-32 bg-gray-200 rounded-lg overflow-hidden image-container">
+      <img alt="Blurred image of a person" class="w-full h-full object-cover" height="128" src="https://placehold.co/128x128" width="128"/>
+      <i class="fas fa-times absolute top-2 right-2 text-white">
+      </i>
+     </div>
+
+     <div class="absolute bottom-0 right-1/4 w-32 h-32 bg-gray-200 rounded-lg overflow-hidden image-container">
+      <img alt="Blurred image of a person" class="w-full h-full object-cover" height="128" src="https://placehold.co/128x128" width="128"/>
+      <i class="fas fa-lock absolute top-2 right-2 text-white">
+      </i>
+     </div>
+
+    </div>
+   </div>
+
+   <h1 class="text-6xl font-bold mt-16 relative z-10">
+    READY TO MONETIZE YOUR CONTENT?
+   </h1>
+
+   <a class="bg-green-500 text-white px-8 py-4 rounded-full mt-8 relative z-10" href="#">
+    Sign Up now
+   </a>
+
+   <div class="flex items-center space-x-4 mt-16 relative z-10">
+    <span class="text-xl">
+     IMPORT, LOCK, SHARE
+    </span>
+
+    <i class="fas fa-lock-open text-2xl">
+    </i>
+
+    <span class="text-xl">
+     AND EARN MONEY
+    </span>
+
+   </div>
+  </lower-main>
+
+  <!-- <footer class="fixed bottom-4 right-4 flex space-x-2">
+   <a class="text-green-500" href="#">
+    EN
+   </a>
+   <a class="text-gray-500" href="#">
+    FR
+   </a>
+   <a class="text-gray-500" href="#">
+    ES
+   </a>
+  </footer> -->
+  
+  <script>
+   document.addEventListener('mousemove', (e) => {
+    const images = document.querySelectorAll('.image-container');
+    images.forEach(image => {
+     const rect = image.getBoundingClientRect();
+     const dx = (e.clientX - (rect.left + rect.width / 2)) / 20;
+     const dy = (e.clientY - (rect.top + rect.height / 2)) / 20;
+     image.style.transform = `translate(${dx}px, ${dy}px)`;
+    });
+   });
+  </script>
+
+ </body>
+</html>
