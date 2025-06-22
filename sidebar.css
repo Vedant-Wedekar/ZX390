@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header (Navbar) */
+header {
+    background: rgba(0, 0, 0, 0.9); /* Solid dark background */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Hero Banner */
+#hero {
+    height: 450px;
+    background: url('IMG/Xmh.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+/* Sidebar */
+#sidebar {
+    position: fixed; /* Fixes the sidebar to the viewport */
+    top: calc(100px); /* Adjust to match the height of the hero banner */
+    left: 0;
+    width: 250px; /* Set the desired width of the sidebar */
+    height: calc(100vh - 100px); /* Full viewport height minus the hero banner */
+    background-color: #000; /* Sidebar background color */
+    color: #fff; /* Text color */
+    overflow-y: auto; /* Enable scrolling for overflowing content */
+    padding: 1rem; /* Add padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+    z-index: 1000; /* Ensure the sidebar stays on top of other elements */
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sidebar ul li:hover {
+    background-color: #575757;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/* Main Content */
+main {
+    margin-left: 250px; /* Aligns the content next to the sidebar */
+    padding: 1rem; /* Add spacing to the content */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Car Section */
+.car-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-card {
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.car-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.car-card p {
+    font-size: 1rem;
+    margin: 5px 0 10px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 2px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.electric-tag {
+    background: #28a745;
+}
+
+.petrol-tag {
+    background: #ffc107;
+}
+
+.diesel-tag {
+    background: #6c757d;
+}
+
+.amg-tag {
+    background: #dc3545;
+}
+
+.new-tag {
+    background: #007bff;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.SETX678{
+    /* margin-right: 200px; */
+    margin-bottom: 400px;
+    text-decoration: none;
+}
